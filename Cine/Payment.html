@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	  <title>CinemaPlus: Payment</title>
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+</head>
+<body>
+  <header>
+    <div class="contenedor">
+      <a href="index.html" class="logotipo">CinemaPlus</a>
+      <nav>
+        <article>
+          <a href="index.html" class="activo">Movies</a>					
+          <a href="adminMain.html" class="activo"> Username</a>
+        </article> 
+      </nav>
+    </div>
+  </header>
+
+  <form id="payment-form">
+    <link rel="stylesheet" href="css/styless.css">
+      <h3>Payment Information</h3>
+      <label for="card-number">Card Number:</label>
+      <input type="text" id="card-number" name="card-number" required>
+      <br>
+      <label for="card-name">Name on Card:</label>
+      <input type="text" id="card-name" name="card-name" required>
+      <br>
+      <label for="expiry-date">Expiration Date:</label>
+      <input type="month" id="expiry-date" name="expiry-date" required>
+      <br>
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" required>
+      <br>
+      <input type="submit" value="Pay">
+    </form>
+  <title>Document</title>
+</body>
+</html>

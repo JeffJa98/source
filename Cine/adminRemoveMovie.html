@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styless.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<title>CinemaPlus: RemoveMovie</title>
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<a href="index.html" class="logotipo">CinemaPlus</a>
+			<nav>
+				<article>
+					<a href="adminMain.html" class="activo">Movies</a>
+					<a href="adminAddMovie.html"class="activo">Add Movie</a>
+					<a href="adminModifyMovie.html"class="activo">Modify Movie</a>}
+					<a href="adminRemoveMovie.html"class="activo">Remove Movie</a>
+					<a id="btn-abrir-popup" class="btn-abrir-popup">Log out</a>
+				</article> 
+			</nav>
+		</div>
+
+		<div class="contenedor">
+			<div class="overlay" id="overlay">
+				<div class="popup" id="popup">
+					<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+					
+					<h3>Log in</h3>	
+					<form action="">
+						<div class="contenedor-inputs">
+							<input type="email" placeholder="E-mail">
+							<input type="text" placeholder="Password">
+						</div>
+						<input type="submit" class="btn-submit" value="Login">
+						<a href="mailto:someone@example.com"><br><br>Forget your password?</a>
+					</form>
+				</div>
+			</div>
+		</div>		
+	</header>
+
+	<main>
+		<form id="register-form">
+			<h2>Remove a Movie</h2>		
+			<div class="form-group">
+				<label for="movieName">Movie name:</label>
+				<input type="text" id="movieName" name="movieName" required>
+				<div class="error" id="movieName-error"></div>
+			</div>
+			<input type="submit" value="Remove">
+		</form>
+	</main>
+	
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+	<script src="js/popup.js"></script>
+	
+</body>
+</html>
